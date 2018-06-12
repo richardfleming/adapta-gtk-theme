@@ -13,6 +13,7 @@ gtk-4.0
 gtk-4.0-eta
 gtk.gresource
 _key_colors.scss
+_gruvbox_palette.scss
 colors.rc
 colors-dark.rc
 gnome-shell-theme.gresource

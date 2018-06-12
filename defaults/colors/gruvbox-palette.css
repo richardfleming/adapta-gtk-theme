@@ -1,0 +1,121 @@
+//
+// A Color palette
+//
+// Adapta-Gruvbox uses the gruvbox palette:
+// [https://github.com/morhetz/gruvbox#palette]
+//
+// Basic palette is split into 3 colour shades
+//    -d, darkest
+//    -m, mid
+//    -b, bright
+//
+// Dark palette uses mid (as base) and bright (as highlight)
+// Light palette uses mid (as base) and darkest (as highlight)
+
+
+$gruvbox-red-d: #9D0006;
+$gruvbox-red-m: #CC241D;
+$gruvbox-red-b: #FB4934;
+$gruvbox-green-d: #79740E;
+$gruvbox-green-m: #98971A;
+$gruvbox-green-b: #B8BB26;
+$gruvbox-yellow-d: #B57614;
+$gruvbox-yellow-m: #D79921;
+$gruvbox-yellow-b: #FABD2F;
+$gruvbox-blue-d: #076678;
+$gruvbox-blue-m: #458588;
+$gruvbox-blue-b: #83A598;
+$gruvbox-purple-d: #8F3F71;
+$gruvbox-purple-m: #B16286;
+$gruvbox-purple-b: #D3869B;
+$gruvbox-aqua-d: #427B58;
+$gruvbox-aqua-m: #689D6A;
+$gruvbox-aqua-b: #8EC07C;
+$gruvbox-gray-d: #7C6F64;
+$gruvbox-gray-m: #928374;
+$gruvbox-gray-b: #A89984;
+$gruvbox-orange-d: #AF3A03;
+$gruvbox-orange-m: #D65D0E;
+$gruvbox-orange-b: #FE8019;
+$gruvbox-grad-01: #1D2021;    // Dark bg0_h
+$gruvbox-grad-02: #282828;    // Dark bg0 / Light fg0
+$gruvbox-grad-03: #32302F;    // Dark bg0_s
+$gruvbox-grad-04: #3C3836;    // Dark bg1 / Light fg1
+$gruvbox-grad-05: #504945;    // Dark bg2 / Light fg2
+$gruvbox-grad-06: #665C54;    // Dark bg3 / Light fg3
+$gruvbox-grad-07: #7C6F64;    // Dark bg4 / Light fg4
+$gruvbox-grad-08: #A89984;    // Dark fg4 / Light bg4
+$gruvbox-grad-09: #BDAE93;    // Dark fg3 / Light bg3
+$gruvbox-grad-10: #D5C4A1;    // Dark fg2 / Light bg2
+$gruvbox-grad-11: #EBDBB2;    // Dark fg1 / Light bg1
+$gruvbox-grad-12: #F2E5BC;    // Light bg0_s
+$gruvbox-grad-13: #FBF1C7;    // Dark fg0 / Light bg0
+$gruvbox-grad-14: #F9F5D7;    // Light bg0_h
+
+
+
+// Dark Palette
+$gruvbox-dark-bg0_h: $gruvbox-grad-01;
+$gruvbox-dark-bg0: $gruvbox-grad-02;
+$gruvbox-dark-bg0_s: $gruvbox-grad-03;
+$gruvbox-dark-bg1: $gruvbox-grad-04;
+$gruvbox-dark-bg2: $gruvbox-grad-05;
+$gruvbox-dark-bg3: $gruvbox-grad-06;
+$gruvbox-dark-bg4: $gruvbox-grad-07;
+$gruvbox-dark-fg0: $gruvbox-grad-13;
+$gruvbox-dark-fg1: $gruvbox-grad-11;
+$gruvbox-dark-fg2: $gruvbox-grad-10;
+$gruvbox-dark-fg3: $gruvbox-grad-09;
+$gruvbox-dark-fg4: $gruvbox-grad-08;
+$gruvbox-dark-bg: $gruvbox-dark-bg0;
+$gruvbox-dark-fg: $gruvbox-dark-fg1;
+$gruvbox-dark-red: $gruvbox-red-m;
+$gruvbox-dark-red-h: $gruvbox-red-b;
+$gruvbox-dark-green: $gruvbox-green-m;
+$gruvbox-dark-green-h: $gruvbox-green-b;
+$gruvbox-dark-yellow: $gruvbox-yellow-m;
+$gruvbox-dark-yellow-h: $gruvbox-yellow-b;
+$gruvbox-dark-blue: $gruvbox-blue-m;
+$gruvbox-dark-blue-h: $gruvbox-blue-b;
+$gruvbox-dark-purple: $gruvbox-purple-m;
+$gruvbox-dark-purple-h: $gruvbox-purple-b;
+$gruvbox-dark-aqua: $gruvbox-aqua-m;
+$gruvbox-dark-aqua-h: $gruvbox-aqua-b;
+$gruvbox-dark-gray: $gruvbox-gray-m;
+$gruvbox-dark-gray-h: $gruvbox-gray-b;
+$gruvbox-dark-orange: $gruvbox-orange-m;
+$gruvbox-dark-orange-h: $gruvbox-orange-b;
+
+// Light Palette
+$gruvbox-light-bg0_h: $gruvbox-grad-14;
+$gruvbox-light-bg0: $gruvbox-grad-13;
+$gruvbox-light-bg0_s: $gruvbox-grad-12;
+$gruvbox-light-bg1: $gruvbox-grad-11;
+$gruvbox-light-bg2: $gruvbox-grad-10;
+$gruvbox-light-bg3: $gruvbox-grad-09;
+$gruvbox-light-bg4: $gruvbox-grad-08;
+$gruvbox-light-fg0: $gruvbox-grad-02;
+$gruvbox-light-fg1: $gruvbox-grad-04;
+$gruvbox-light-fg2: $gruvbox-grad-05;
+$gruvbox-light-fg3: $gruvbox-grad-06;
+$gruvbox-light-fg4: $gruvbox-grad-07;
+$gruvbox-light-bg: $gruvbox-light-bg0;
+$gruvbox-light-fg: $gruvbox-light-fg1;
+$gruvbox-light-red: $gruvbox-red-m;
+$gruvbox-light-red-h: $gruvbox-red-d;
+$gruvbox-light-green: $gruvbox-green-m;
+$gruvbox-light-green-h: $gruvbox-green-d;
+$gruvbox-light-yellow: $gruvbox-yellow-m;
+$gruvbox-light-yellow-h: $gruvbox-yellow-d;
+$gruvbox-light-blue: $gruvbox-blue-m;
+$gruvbox-light-blue-h: $gruvbox-blue-d;
+$gruvbox-light-purple: $gruvbox-purple-m;
+$gruvbox-light-purple-h: $gruvbox-purple-d;
+$gruvbox-light-aqua: $gruvbox-aqua-m;
+$gruvbox-light-aqua-h: $gruvbox-aqua-d;
+$gruvbox-light-gray: $gruvbox-gray-m;
+$gruvbox-light-gray-h: $gruvbox-gray-d;
+$gruvbox-light-orange: $gruvbox-orange-m;
+$gruvbox-light-orange-h: $gruvbox-orange-d;
+
+

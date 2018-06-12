@@ -15,9 +15,12 @@
 //
 // A Color palette
 //
-// Adapta uses google's palette:
-// [https://www.google.com/design/spec/style/color.html#color-color-palette]
+// Adapta-Gruvbox uses the gruvbox palette:
+// [https://github.com/morhetz/gruvbox#palette]
 //
+
+// Import gruvbox palette
+@import 'gruvbox_palette';
 
 
 // Import key colour-scheme defined at build-time.
@@ -28,12 +31,14 @@
 // Foreground colors
 //
 
-$fg_color: if($variant == light, #263238,                       // = BluGry900
-                                 #CFD8DC);                      // = BluGry100
+$fg_color: if($variant == light, 
+                $gruvbox-light-fg,
+                $gruvbox-dark-fg);
+
 $secondary_fg_color: gtkopacity($fg_color, 0.87);
 $tertiary_fg_color: gtkopacity($fg_color, 0.54);
 
-$selected_fg_color: #FFFFFF;                                    // = White
+$selected_fg_color: $gruvbox-light-fg;
 $secondary_selected_fg_color: gtkopacity($selected_fg_color, 0.87);
 $tertiary_selected_fg_color: gtkopacity($selected_fg_color, 0.7);
 
@@ -48,14 +53,15 @@ $insensitive_tertiary_selected_fg_color:
   gtkopacity($tertiary_selected_fg_color, 0.4);
 
 // preview text on empty GtkEntry
-$placeholder_text_color: #78909C;                               // = BluGry400
+$placeholder_text_color: $gruvbox-light-gray-h;
 
 
 //
 // Inverted foreground colors
 //
 
-$inverted_fg_color: #CFD8DC;                                    // = BluGry100
+$inverted_fg_color: $gruvbox-dark-fg;
+
 $inverted_secondary_fg_color: gtkopacity($inverted_fg_color, 0.87);
 $inverted_tertiary_fg_color: gtkopacity($inverted_fg_color, 0.54);
 
@@ -63,7 +69,8 @@ $insensitive_inverted_fg_color: gtkopacity($inverted_fg_color, 0.28);
 $insensitive_inverted_secondary_fg_color:
   gtkopacity($inverted_secondary_fg_color, 0.28);
 
-$fixed_fg_color: #263238;                                       // = BluGry900
+$fixed_fg_color: $gruvbox-light-fg;
+
 $secondary_fixed_fg_color: gtkopacity($fixed_fg_color, 0.87);
 $tertiary_fixed_fg_color: gtkopacity($fixed_fg_color, 0.54);
 $insensitive_fixed_fg_color: gtkopacity($fixed_fg_color, 0.28);
@@ -75,46 +82,51 @@ $unfocused_inverted_fg_color: gtkopacity($inverted_fg_color, 0.4);
 // Background colors
 //
 
-$bg_color: if($variant == light, mix(#FFFFFF, #ECEFF1, 75%),    // = #FAFBFC
-                                   #263238);                    // = BluGry900
+$bg_color: if($variant == light, 
+                $gruvbox-light-bg1,
+                $gruvbox-dark-bg1);
+
 $base_color: if($variant == light,
-                #FFFFFF,                                        // = White
-                mix(#263238, #37474F, 85%));                    // = #29353B
-$secondary_base_color: mix($base_color, $bg_color, 50%);        // = #FDFDFE
-                                                                // = #28343A
+                  $gruvbox-light-bg0,
+                  $gruvbox-dark-bg0);
+                
+$secondary_base_color: mix($base_color, $bg_color, 50%);
+
 $light_color: if($variant == light,
-                 $base_color,                                   // = White
-                 mix(#263238, #37474F, 50%));                   // = #2F3D44
+                   $base_color,
+                   $gruvbox-dark-bg2);
+
 $dark_color: if($variant == light,
-                mix(#ECEFF1, #CFD8DC, 75%),                     // = #E5E9EC
-                mix(#263238, #000000, 90%));                    // = #222D32
+                  $gruvbox-light-bg2,
+                  $gruvbox-dark-bg0);
+
 $secondary_dark_color: if($variant == light,
-                          mix(#FFFFFF, #ECEFF1, 60%),           // = #F7F9F9
-                          mix(#263238, #000000, 95%));          // = #243035
+                            $gruvbox-light-bg1,
+                            $gruvbox-dark-bg0_h);
 
 
 //
 // Dark background colors on light variant
 //
 
-$inverted_bg_color: #263238;                                    // = BluGry900
-$inverted_base_color: mix(#263238, #37474F, 85%);               // = #29353B
-$inverted_light_color: mix(#263238, #37474F, 50%);              // = #2F3D44
-$inverted_dark_color: mix(#263238, #000000, 90%);               // = #222D32
+$inverted_bg_color: $gruvbox-dark-bg0;
+$inverted_base_color: $gruvbox-dark-bg0_s;
+$inverted_light_color: $gruvbox-dark-bg1;
+$inverted_dark_color: $gruvbox-dark-bg0_h;
 
 
 //
 // Light background colors on dark variant
 //
 
-$fixed_base_color: #FFFFFF;                                     // = White
+$fixed_base_color: $gruvbox-light-bg;
 
 
 //
 // Selection (primary) colors
 //
 
-// Default: #00BCD4                                             // = Cyan500
+// Default: #FBF1C7                                       // key-gruvbox-select
 $selected_bg_color: $key_selection_color;
 
 
@@ -122,12 +134,14 @@ $selected_bg_color: $key_selection_color;
 // Accent (secondary) colors
 //
 
-// Default: #4DB6AC                                             // = Teal300
+// Default: #689D6A                                       // key-gruvbox-accent
 $accent_color: $key_accent_color;
+
 $accent_label_color:
   if($variant == light,
-  mix($key_accent_color, $fg_color, 80%),                       // = #459C95
-  mix($key_accent_color, $fg_color, 60%));                      // = #81C4BF
+       mix($key_accent_color, $fg_color, 80%),
+       mix($key_accent_color, $fg_color, 60%));
+  
 $secondary_accent_color: gtkopacity($accent_color, 0.87);
 $secondary_accent_label_color: gtkopacity($accent_label_color, 0.87);
 $accent_fill_color: gtkopacity($inverted_fg_color, 0.1);
@@ -135,7 +149,7 @@ $drop_target_color: $accent_color;
 $drop_target_fill_color: gtkopacity($drop_target_color, 0.2);
 
 $inverted_accent_label_color:
-  mix($key_accent_color, $inverted_fg_color, 60%);              // = #81C4BF
+  mix($key_accent_color, $inverted_fg_color, 60%);
 $inverted_secondary_accent_label_color:
   gtkopacity($inverted_accent_label_color, 0.87);
 
@@ -170,39 +184,39 @@ $menu_highlight_color:
 // Misc colors
 //
 
-$link_color: #03A9F4;                                           // = LtBlu500
-$link_visited_color: #9C27B0;                                   // = Purple500
+$link_color: $gruvbox-blue-m;
+$link_visited_color: $gruvbox-purple-b;
 
-$link_label_color: if($variant == light,
-                   $link_color,
-                   mix($link_color, $fg_color, 60%));           // = #55BCEA
+$link_label_color: $link_color;
+
 $link_visited_label_color:
   if($variant == light,
   $link_visited_color,
-  mix($link_visited_color, $fg_color, 60%));                    // = #B06EC2
+  mix($link_visited_color, $fg_color, 60%));
 
-$warning_color: #FF9800;                                        // = Orange500
-$error_color: #F44336;                                          // = Red500
-$success_color: #00E676;                                        // = GreenA400
+$warning_color: $gruvbox-orange-b;
+$error_color: $gruvbox-red-b;
+$success_color: $gruvbox-green-m;
 
-// Default: #009688                                             // = Teal500
+// Default: #427B58                                       // key-gruvbox-suggest
 $suggested_color: $key_suggestion_color;
-// Default: #FF5252                                             // = RedA200
+
+// Default: #CC241D                                       // key-gruvbox-destroy
 $destructive_color: $key_destruction_color;
 
-$info_bg_color: #1DE9B6;                                        // = TealA400
-$question_bg_color: #FFEA00;                                    // = YellwA400
-$warning_bg_color: #FF9100;                                     // = OrangA400
-$error_bg_color: #FF1744;                                       // = RedA400
-$solid_red: #F44336;                                            // = Red500
-$solid_yellow: #FFEB3B;                                         // = Yellow500
-$solid_green: #4CAF50;                                          // = Green500
-$solid_blue: #2196F3;                                           // = Blue500
+$info_bg_color: $gruvbox-aqua-m;
+$question_bg_color: $gruvbox-yellow-m;
+$warning_bg_color: $gruvbox-orange-m;
+$error_bg_color: $gruvbox-red-m;
+$solid_red: $gruvbox-red-b;
+$solid_yellow: $gruvbox-yellow-b;
+$solid_green: $gruvbox-green-b;
+$solid_blue: $gruvbox-blue-b;
 
 
 //
 // Solid panel color
 //
 
-$panel_bg_color: mix(#263238, #000000, 50%);                    // = #13191C
+$panel_bg_color: $gruvbox_grad_01;
 $panel_separator_color: gtkopacity($inverted_fg_color, 0.12 * 0.55);

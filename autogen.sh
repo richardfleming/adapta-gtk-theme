@@ -12,7 +12,7 @@ autoreconf --force --install --warnings=all
 
 if test -z "${NOCONFIGURE}"; then
     set -x
-    $srcdir/configure --prefix=/usr \
+    $srcdir/configure --prefix=${HOME}/.local \
                       --disable-gtk_next \
                       --disable-parallel \
                       --disable-chrome-legacy \
