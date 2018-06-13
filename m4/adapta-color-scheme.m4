@@ -81,10 +81,10 @@ cp -R ./gtk/sass/common/_key_colors.scss \
 AC_MSG_RESULT([creating sass/common/_key_colors.scss])
 
 # Copy gruvbox pallete to SASS directories
-cp -R ./defaults/colors/gruvbox_palette.scss \
+cp -R ./defaults/colors/gruvbox-palette.scss \
          ./gtk/sass/common/_gruvbox_palette.scss
 
-cp -R ./defaults/colors/gruvbox_palette.scss \
+cp -R ./defaults/colors/gruvbox-palette.scss \
          ./shell/sass/common/_gruvbox_palette.scss
 
 AC_MSG_RESULT([creating sass/common/_gruvbox_palette.scss])
