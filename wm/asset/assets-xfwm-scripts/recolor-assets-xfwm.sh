@@ -18,9 +18,9 @@ COL_FILE="../../../gtk/sass/common/_colors.scss"
 KEY_FILE="../../../gtk/sass/common/_key_colors.scss"
 
 # Default colours
-selection1="`grep 'Cyan500' $COL_FILE | \
+selection1="`grep 'key-gruvbox-select' $COL_FILE | \
                    cut -d' ' -f3`"
-destruction1="`grep 'RedA200' $COL_FILE | \
+destruction1="`grep 'key-gruvbox-destroy' $COL_FILE | \
                      cut -d' ' -f3`"
 
 # Check and re-color 'close-pressed' and 'menu-pressed' button

@@ -20,7 +20,7 @@ KEY_FILE="../../gtk/sass/common/_key_colors.scss"
 THUMB="thumbnail"
 
 # Default colours
-selection1="`grep 'Cyan500' ../../gtk/sass/common/_colors.scss | \
+selection1="`grep 'key-gruvbox-select' ../../gtk/sass/common/_colors.scss | \
                    cut -d' ' -f3`"
 
 # Check and re-color SVG files

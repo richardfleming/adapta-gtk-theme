@@ -15,9 +15,9 @@ COL_FILE="../../sass/common/_colors.scss"
 KEY_FILE="../../sass/common/_key_colors.scss"
 
 # Default colours
-selection1="`grep 'Cyan500' $COL_FILE | \
+selection1="`grep 'key-gruvbox-select' $COL_FILE | \
                    cut -d' ' -f3`"
-accent1="`grep 'Teal300' $COL_FILE | \
+accent1="`grep 'key-gruvbox-accent' $COL_FILE | \
                 cut -d' ' -f3`"
 
 # Check and re-color color-scheme

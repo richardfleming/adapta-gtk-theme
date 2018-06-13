@@ -19,11 +19,11 @@ INDEX="assets-gnome-shell.txt"
 KEY_FILE="../../gtk/sass/common/_key_colors.scss"
 
 # Default colours
-selection1="`grep 'Cyan500' ../../gtk/sass/common/_colors.scss | \
+selection1="`grep 'key-gruvbox-select' ../../gtk/sass/common/_colors.scss | \
                    cut -d' ' -f3`"
-accent1="`grep 'Teal300' ../../gtk/sass/common/_colors.scss | \
+accent1="`grep 'key-gruvbox-accent' ../../gtk/sass/common/_colors.scss | \
                 cut -d' ' -f3`"
-destruction1="`grep 'RedA200' ../../gtk/sass/common/_colors.scss | \
+destruction1="`grep 'key-gruvbox-destroy' ../../gtk/sass/common/_colors.scss | \
                      cut -d' ' -f3`"
 
 # Check and re-color SVG files

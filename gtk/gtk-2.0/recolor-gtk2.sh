@@ -14,9 +14,9 @@ SRC_FILE="colors.rc"
 SRC_DARK_FILE="colors-dark.rc"
 
 # Default colours
-selection1="`grep 'Cyan500' ../sass/common/_colors.scss | \
+selection1="`grep 'key-gruvbox-select' ../sass/common/_colors.scss | \
 		cut -d' ' -f3`"
-accent1="`grep 'Teal300' ../sass/common/_colors.scss | \
+accent1="`grep 'key-gruvbox-accent' ../sass/common/_colors.scss | \
 		cut -d' ' -f3`"
 
 # Check and re-color 'selection-color' and 'accent-color'
