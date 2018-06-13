@@ -45,7 +45,7 @@ $insensitive_osd_secondary_fg_color:
 // Background colors
 //
 
-$bg_color: if($nokto == false, $gruvbox-light-bg, $gruvbox-dark-bg);
+$bg_color: if($nokto == false, $gruvbox-light-bg1, $gruvbox-dark-bg1);
 $base_color: if($nokto == false, $gruvbox-light-bg0, $gruvbox-dark-bg0);
 $secondary_base_color: mix($base_color, $bg_color, 50%);
 $secondary_dark_color: if($nokto == false, $gruvbox-light-bg1,
@@ -107,7 +107,7 @@ $inverted_secondary_accent_label_color:
 
 $borders_color: if($nokto == false, shellopacity(#000000, 0.09),
                                     shellopacity(#000000, 0.13));
-$solid_light_borders_color: if($nokto == false, #E5E9EC, #212B30);
+$solid_light_borders_color: if($nokto == false, #D5C4A1, #212B30);
 $borders_edge: shellopacity(#000000, 0.05);
 $top_hilight: $borders_edge;
 $borders_highlight: shellopacity(#FFFFFF, 0.07);

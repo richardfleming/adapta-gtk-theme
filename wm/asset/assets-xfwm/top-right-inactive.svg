@@ -78,13 +78,13 @@
      id="layer1"
      transform="translate(0,-1020.3622)">
     <path
-       style="fill:#222d32;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#1D2021;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 3,1020.3622 1,1 v 31 H 0 v -32 z"
        id="path815"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccc" />
     <path
-       style="fill:#28343a;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#32302F;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 3.0002028,1020.3622 4,1021.3622 H 2.028e-4 v -1 z"
        id="path850"
        inkscape:connector-curvature="0"

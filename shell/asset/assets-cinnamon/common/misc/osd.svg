@@ -27,7 +27,7 @@
          height="48"
          width="48"
          id="rect4232"
-         style="fill:#fafbfc;fill-opacity:1;stroke:none" />
+         style="fill:#EBDBB2;fill-opacity:1;stroke:none" />
     </clipPath>
     <filter
        style="color-interpolation-filters:sRGB"
@@ -194,7 +194,7 @@
          height="20.002066"
          width="21.002064"
          id="rect832"
-         style="opacity:0.9;fill:#222d32;fill-opacity:1;fill-rule:evenodd;stroke:#222d32;stroke-width:0.99793488;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="opacity:0.9;fill:#1D2021;fill-opacity:1;fill-rule:evenodd;stroke:#1D2021;stroke-width:0.99793488;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
   </g>
 </svg>

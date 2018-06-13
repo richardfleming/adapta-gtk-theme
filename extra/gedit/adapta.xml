@@ -5,8 +5,8 @@
   <description>Gedit material theme matched for Adapta GTK theme.</description>
 
   <!-- Color Palette -->
-  <color name="adapta0"                     value="#222D32" />
-  <color name="adapta1"                     value="#243035" />
+  <color name="adapta0"                     value="#1D2021" />
+  <color name="adapta1"                     value="#1D2021" />
   <color name="adapta2"                     value="#0B9BAF" />
   <color name="adapta3"                     value="#555F64" />
   <color name="adapta4"                     value="#CFD8DC" />
@@ -18,7 +18,7 @@
   <color name="adapta10"                    value="#FFCB6B" />
   <color name="adapta11"                    value="#C3E88D" />
   <color name="adapta12"                    value="#C792EA" />
-  <color name="adapta13"                    value="#29353B" />
+  <color name="adapta13"                    value="#3C3836" />
 
   <!-- GUI Styling -->
   <style name="background-pattern"          background="adapta1" />
