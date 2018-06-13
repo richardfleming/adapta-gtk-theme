@@ -63,7 +63,7 @@ style "notify-text"
 {
   GtkWidget::link-color = "#03A9F4"
 
-  fg[NORMAL] = "#CFD8DC"
+  fg[NORMAL] = "#EBDBB2"
   fg[PRELIGHT] = "#FFFFFF"
 }
 

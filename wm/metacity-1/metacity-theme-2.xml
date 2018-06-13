@@ -10,8 +10,8 @@
 
 <!-- meaningfull constants -->
 
-<constant name="C_title_focused" value="#CFD8DC" />
-<constant name="C_title_unfocused" value="blend/#1D2021/#CFD8DC/0.4" />
+<constant name="C_title_focused" value="#EBDBB2" />
+<constant name="C_title_unfocused" value="blend/#1D2021/#EBDBB2/0.4" />
 <constant name="D_icons_unfocused_offset" value="0" /> <!-- offset of the unfocused icons -->
 
 <!-- geometries -->

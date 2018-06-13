@@ -13,13 +13,13 @@
 // colors for dark-variant
 //
 
-FG_COLOR: #CFD8DC;                              // Main foreground color
-SECONDARY_FG_COLOR: #CFD8DCDE;                  // Secondary foreground color (87%)
-TERTIARY_FG_COLOR: #CFD8DC8A;                   // Tertiary foreground color (54%)
-INSENSITIVE_FG_COLOR: #CFD8DC47;                // Insensitive foreground color (28%)
+FG_COLOR: #EBDBB2;                              // Main foreground color
+SECONDARY_FG_COLOR: #EBDBB2DE;                  // Secondary foreground color (87%)
+TERTIARY_FG_COLOR: #EBDBB28A;                   // Tertiary foreground color (54%)
+INSENSITIVE_FG_COLOR: #EBDBB247;                // Insensitive foreground color (28%)
 SELECTED_FG_COLOR: #FFFFFF;                     // Selected foreground color
 2ND_SELECTED_FG_COLOR: #FFFFFFDE;               // Secondary selected foreground color (87%)
-OSD_FG_COLOR: #CFD8DC;                          // Tooltip foreground color
+OSD_FG_COLOR: #EBDBB2;                          // Tooltip foreground color
 PLACEHOLDER_COLOR: #7C6F64;                     // Placeholder foreground color
 FIXED_SECONDARY_FG_COLOR: #3C3836DE;            // Dark foreground color in dark variant (87%)
 
@@ -64,8 +64,8 @@ GREEN: #4CAF50;
 BLUE: #2196F3;
 
 SCROLLBAR_BG: #3C38368C;                        // Trough color (55%)
-SCROLLBAR_SLIDER_BG: #CFD8DC47;                 // Slider color (28%)
-SCROLLBAR_SLIDER_HOVER_BG: #CFD8DC69;           // Hovered slider color (41%)
+SCROLLBAR_SLIDER_BG: #EBDBB247;                 // Slider color (28%)
+SCROLLBAR_SLIDER_HOVER_BG: #EBDBB269;           // Hovered slider color (41%)
 
 //
 // basic

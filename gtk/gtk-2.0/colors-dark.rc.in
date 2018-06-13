@@ -2,11 +2,11 @@
 # Colour scheme
 #
 gtk-color-scheme = "base_color:#3C3836\nbg_color:#3C3836"
-gtk-color-scheme = "text_color:#CFD8DC\nfg_color:#CFD8DC"
+gtk-color-scheme = "text_color:#EBDBB2\nfg_color:#EBDBB2"
 gtk-color-scheme = "selected_bg_color:#00BCD4\nselected_fg_color:#FFFFFF"
-gtk-color-scheme = "tooltip_bg_color:#1D2021\ntooltip_fg_color:#CFD8DC"
+gtk-color-scheme = "tooltip_bg_color:#1D2021\ntooltip_fg_color:#EBDBB2"
 gtk-color-scheme = "link_color:#458588\nvisited_link_color:#dda8a4"
-gtk-color-scheme = "inverted_dark_color:#1D2021\ninverted_fg_color:#CFD8DC"
+gtk-color-scheme = "inverted_dark_color:#1D2021\ninverted_fg_color:#EBDBB2"
 gtk-color-scheme = "scroll_slider_color:#BEC2C3\nscroll_slider_prelight_color:#979D9F"
 gtk-color-scheme = "panel_bg_color:#1D2021"
 gtk-color-scheme = "secondary_dark_color:#1D2021"
