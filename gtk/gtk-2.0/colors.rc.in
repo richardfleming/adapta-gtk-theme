@@ -3,7 +3,7 @@
 #
 gtk-color-scheme = "base_color:#FFFFFF\nbg_color:#EBDBB2"
 gtk-color-scheme = "text_color:#3C3836\nfg_color:#3C3836"
-gtk-color-scheme = "selected_bg_color:#00BCD4\nselected_fg_color:#FFFFFF"
+gtk-color-scheme = "selected_bg_color:#689D6A\nselected_fg_color:#FFFFFF"
 gtk-color-scheme = "tooltip_bg_color:#1D2021\ntooltip_fg_color:#EBDBB2"
 gtk-color-scheme = "link_color:#03A9F4\nvisited_link_color:#9C27B0"
 gtk-color-scheme = "inverted_dark_color:#1D2021\ninverted_fg_color:#EBDBB2"

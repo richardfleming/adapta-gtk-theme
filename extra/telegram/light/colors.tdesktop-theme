@@ -45,7 +45,7 @@ SUGGESTED_ACTIVE_COLOR: #33ABA0;                // Active/ripple suggested actio
 DESTRUCTIVE_FILL_COLOR: #FEE7E8;                // Hovered destructive action color (Bg + 12%)
 DESTRUCTIVE_ACTIVE_FILL_COLOR: #FBD1D2;         // Active/ripple destructive action color (Bg + 25%)
 
-SELECTED_BG_COLOR: #00BCD4;                     // Primary color
+SELECTED_BG_COLOR: #689D6A;                     // Primary color
 ACCENT_COLOR: #4DB6AC;                          // Secondary color
 SUGGESTED_COLOR: #009688;                       // Suggested action color
 DESTRUCTIVE_COLOR: #FF5252;                     // Destructive action color
